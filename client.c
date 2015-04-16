@@ -7,9 +7,9 @@
 #include <string.h>
 #include <unistd.h>
 #define BUFFSIZE 4096
-void DieWithError(char *errorMessage)
-{perror(errorMessage);
- exit(1);
+void DieWithError(char *errorMessage){
+perror(errorMessage);
+exit(1);
 }
 int main(int argc, char *argv[]){
 int sock;
