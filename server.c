@@ -33,14 +33,12 @@ typedef struct{
 pid_t pid;
 char status;
 }REPORT;
-int handle_http_request(char *path, int sockfd)
-{
+int handle_http_request(char *path, int sockfd){
 if(!strcmp(path, "/")){
 write(sockfd, http_html_hdr, strlen(http_html_hdr));
 write(sockfd, http_index_html, strlen(http_index_html));
 }
-else
-{
+else{
 write(sockfd, http_error_hdr, strlen(http_error_hdr));
 }
 close(sockfd);
@@ -122,8 +120,7 @@ return -1;
 return 0;
 }
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv){
 int listenfd;
 struct sockaddr_in servaddr;
 int PRECHILD,MAXCHILD;
