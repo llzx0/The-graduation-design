@@ -6,7 +6,7 @@ do
 {
     echo 	`./client 127.0.0.1 8080 GET`
     echo $i
-}
+}&
 done
 wait
 echo "end of the loop"
