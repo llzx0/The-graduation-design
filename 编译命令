@@ -1,7 +1,7 @@
 编译:
 gcc client.c -o client
 gcc server.c -o server -lcurses
-chmod -x test.sh
+chmod +x test.sh
 测试:
 ./server
 ./test.sh
