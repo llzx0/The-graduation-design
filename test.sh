@@ -4,7 +4,7 @@ echo "you have create " $answer "clients ."
 for ((i=1;i<=$answer;i++));
 do
 {
-    echo 	`./client 127.0.0.1 8080 GET`
+    echo 	`./client 127.0.0.1 5656 GET`
     echo $i
 }&
 done
