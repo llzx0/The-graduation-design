@@ -125,6 +125,7 @@ int main()
     curs_set(1);
     echo();
     box(querybox,0,0);
+    mvwaddstr(querybox,2,1,"please input a num.");
     do {
         int selected_item;
         WINDOW **menu_items;
